@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block css %}
+    <link rel="stylesheet" href="{% static 'app1/css/about.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'app1/css/about.css' %}" type="text/css">
+{% endblock %}
+{% block title %}
+    About Page
+{% endblock %}
+
+{% block content %}
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                My name is <span id="about-name">{{ name }}</span>
+                This is about Page Data
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

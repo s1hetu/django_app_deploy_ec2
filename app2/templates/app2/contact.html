@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block css %}
+    <link rel="stylesheet" href="{% static 'app2/css/contact.css' %}">
+{% endblock %}
+{% block title %}
+    Contact Page
+{% endblock %}
+
+{% block content %}
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                This is contact page
+                Email is <span id="contact-email">{{ email }}</span>
+
+            </div>
+        </div>
+    </div>
+
+{% endblock %}
